@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-12 d-flex justify-content-center align-content-center">
+        <div class="input-group custom-search-bar">
+            <input type="text" [(ngModel)]="searchQuery" class="form-control custom-search-input"
+                placeholder="Search for an artist..." aria-label="Search for an artist" />
+            <button class="custom-search-icon-button" (click)="search()">
+                <i class="fa fa-search custom-search-icon"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div *ngFor="let artist of artists" class="col-md-3">
+        <app-artist-card [artistId]="artist.id" [artistImage]="artist.images[0]?.url" [artistName]="artist.name"
+            [followers]="artist.followers.total" [popularity]="artist.popularity / 20"></app-artist-card>
+    </div>
+</div>

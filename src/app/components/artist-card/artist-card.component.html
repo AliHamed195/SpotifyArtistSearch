@@ -1,0 +1,9 @@
+<div class="card artist-card" (click)="getAlbums()">
+    <img [src]="artistImage" class="card-img-top artist-image" alt="{{ artistName }}">
+    <div class="card-body">
+        <h5 class="card-title">{{ artistName }}</h5>
+        <p class="card-text">{{ followers | number }} followers</p>
+        <app-rating-input [maxRating]="5" [currentRating]="popularity"
+            (ratingSelected)="onRatingSelected(1)"></app-rating-input>
+    </div>
+</div>

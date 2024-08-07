@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 album-title">
+            <span class="artistName">{{ artistName }}</span>
+            <span class="Albums">Albums</span>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let album of albums" class="col-md-3">
+            <app-album [albumCover]="album.images[0]?.url" [albumName]="album.name" [albumArtists]="album.artistsNames"
+                [releaseYear]="album.release_date.split('-')[0]" [totalTracks]="album.total_tracks"
+                [spotifyLink]="album.external_urls.spotify">
+            </app-album>
+        </div>
+    </div>
+</div>

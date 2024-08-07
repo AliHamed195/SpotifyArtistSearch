@@ -1,0 +1,20 @@
+.custom-login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 400px;
+}
+
+.custom-login-btn .btn-text {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.spotify-icon {
+    color: #1DB954;
+    font-size: 2.3rem;
+    position: absolute;
+    right: 10px;
+}

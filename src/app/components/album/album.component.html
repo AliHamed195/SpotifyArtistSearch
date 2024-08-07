@@ -1,0 +1,10 @@
+<div class="card album-card">
+    <img [src]="albumCover" class="card-img-top album-image" alt="{{ albumName }}">
+    <div class="card-body">
+        <h5 class="card-title">{{ albumName }}</h5>
+        <p class="card-text">{{ albumArtists }}</p>
+        <p class="card-text">{{ releaseYear }}</p>
+        <p class="card-text">{{ totalTracks }} tracks</p>
+    </div>
+    <a [href]="spotifyLink" target="_blank" class="btn btn-outline-secondary btn-block">Preview on Spotify</a>
+</div>

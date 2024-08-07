@@ -1,0 +1,9 @@
+.custom-navbar {
+    background-color: lightgray;
+    padding: 15px;
+    border: 1px solid gray;
+}
+
+.custom-container {
+    min-height: 90vh;
+}

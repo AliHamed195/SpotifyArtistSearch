@@ -1,0 +1,33 @@
+.album-card {
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.album-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+}
+
+.btn-outline-secondary {
+    font-size: 0.8rem;
+    border-radius: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #6c757d;
+}
